@@ -1,5 +1,38 @@
 # NgPokemonApp
 
+Application Web Angular d'administrateur de données de pokémons. Présence d'une interface d'utilisateur avec fonctionnalités CRUD connectée avec une Api (angular-in-memory-web-api) qui simule un backend.  
+L'application est hébergée sur Firebase (hostings).
+
+Cette application Angular possède une interface de connexion avec une reconnaissance des identifiants d'un administrateur principal. En cas de connexion réussie, l'administrateur reconnu est redirigé vers un panneau d'administration affichant une liste de pokémons récupérée à partir d'un fichier de données (src/app/pokemon/mock-pokemonList.ts).
+
+A partir de cette liste de pokémons, l'utilisateur peut :
+
+    - exécuter une recherche par nom de pokémon, dans le champ de formulaire dédié, pour trouver des pokémons particuliers (contraintes de 3 caractères minimum),
+
+    - créer un pokémon en cliquant sur le bouton "+" dédié,
+
+    - cliquer sur le pokémon pour accèder au détail de sa fiche. Dans cette page détaillée, il peut visualiser toutes les informations disponibles sur le pokémon, et il peut aussi l'éditer en respectant des contraintes de validation (html5/ts), ou encore le supprimer de la liste.
+
+Les formulaires de création et d'édition de pokémon possèdent tous deux des contraintes de validation bien définis, pour informer l'utilisateur des erreurs de validation et l'aider à les corriger.
+
+Projet en ligne à des fins de test sur ces deux urls :
+
+- https://ng-pokemon-app-8fdec.firebaseapp.com/
+- https://ng-pokemon-app-8fdec.web.app
+  (il suffit de recharger la page pour rétablir la liste originale après les modifications )
+
+      ******
+
+Commandes que j'ai utilisé pour Firebase (à exécuter à la racine du projet) :
+(créer un projet sur firebase)
+
+Compiler les fichiers /dist pour firebase : `npm run build`
+Se connecter à firebase : `firebase login`
+Tester les modifications avant le déploiement : `firebase serve`  
+Déployer sur firebase hostings : `firebase deploy`
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Development server
