@@ -1,4 +1,4 @@
-# NgPokemonApp
+# angular-pokemon-app-firebase
 
 Application Web Angular d'administrateur de données de pokémons. Présence d'une interface d'utilisateur avec fonctionnalités CRUD connectée avec une Api (angular-in-memory-web-api) qui simule un backend.  
 L'application est hébergée sur Firebase (hostings).
@@ -23,13 +23,23 @@ Projet en ligne à des fins de test sur ces deux urls :
 
       ******
 
-Commandes que j'ai utilisé pour Firebase (à exécuter à la racine du projet) :
-(créer un projet sur firebase)
+  Installer les dépendances du project : `npm install`
 
-Compiler les fichiers /dist pour firebase : `npm run build`
-Se connecter à firebase : `firebase login`
-Tester les modifications avant le déploiement : `firebase serve`  
-Déployer sur firebase hostings : `firebase deploy`
+  Commandes que j'ai utilisé pour Firebase (à exécuter à la racine du projet) :
+
+  Compiler le projet avant de l'envoyer à firebase : `npm run build`
+
+  (créer un projet hostings sur firebase)[https://firebase.google.com/docs/web/setup]
+
+  Installation de CLI Firebase (nécessite Node.js v14.18.0 ou version ultérieur) : `npm install -g firebase-tools`
+
+  Initialiser un nouveau projet Firebase: `firebase init`
+
+  Se connecter à firebase : `firebase login`
+
+  Tester les modifications avant le déploiement : `firebase serve`
+
+  Déployer sur firebase hostings : `firebase deploy`
 
 ---
 
