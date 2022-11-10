@@ -7,11 +7,11 @@ Cette application Angular possède une interface de connexion avec une reconnais
 
 A partir de cette liste de pokémons, l'utilisateur peut :
 
-    - exécuter une recherche par nom de pokémon, dans le champ de formulaire dédié, pour trouver des pokémons particuliers (contraintes de 3 caractères minimum),
+- exécuter une recherche par nom de pokémon, dans le champ de formulaire dédié, pour trouver des pokémons particuliers (contraintes de 3 caractères minimum),
 
-    - créer un pokémon en cliquant sur le bouton "+" dédié,
+- créer un pokémon en cliquant sur le bouton "+" dédié,
 
-    - cliquer sur le pokémon pour accèder au détail de sa fiche. Dans cette page détaillée, il peut visualiser toutes les informations disponibles sur le pokémon, et il peut aussi l'éditer en respectant des contraintes de validation (html5/ts), ou encore le supprimer de la liste.
+- cliquer sur le pokémon pour accèder au détail de sa fiche. Dans cette page détaillée, il peut visualiser toutes les informations disponibles sur le pokémon, et il peut aussi l'éditer en respectant des contraintes de validation (html5/ts), ou encore le supprimer de la liste.
 
 Les formulaires de création et d'édition de pokémon possèdent tous deux des contraintes de validation bien définis, pour informer l'utilisateur des erreurs de validation et l'aider à les corriger.
 
