@@ -31,8 +31,8 @@ Les formulaires de création et d'édition de pokémon possèdent tous deux des 
 Projet en ligne à des fins de test sur ces deux urls :
 (il suffit de recharger la page du navigateur pour rétablir la liste originale après les modifications)
 
-- (https://ng-pokemon-app-8fdec.firebaseapp.com/)[https://ng-pokemon-app-8fdec.firebaseapp.com/]
-- (https://ng-pokemon-app-8fdec.web.app)[https://ng-pokemon-app-8fdec.firebaseapp.com/]
+- (Lien 1 firebase)[https://ng-pokemon-app-8fdec.firebaseapp.com/]
+- (Lien 2 firebase)[https://ng-pokemon-app-8fdec.firebaseapp.com/]
 
  --- 
  
