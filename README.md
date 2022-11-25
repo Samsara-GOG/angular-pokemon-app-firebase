@@ -1,6 +1,6 @@
 # angular-pokemon-app-firebase
 
-Application Web Angular d'administrateur de données de pokémons. Présence d'une interface d'utilisateur avec fonctionnalités CRUD connectée avec une Api (angular-in-memory-web-api) qui simule un backend.  
+Application Web Angular d'administration de données de pokémons. Présence d'une interface d'utilisateur avec fonctionnalités CRUD connectée avec une Api (angular-in-memory-web-api) qui simule un backend.  
 
 L'application est hébergée sur Firebase (hostings).
 
