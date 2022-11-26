@@ -56,7 +56,7 @@ Projet en ligne à des fins de test sur ces deux urls :
 
 `npm run build`
 
-## Installation de CLI Firebase (nécessite Node.js v14.18.0 ou version ultérieur) 
+## Installation de CLI Firebase (nécessite Node.js v14.18.0 ou version ultérieure) 
 
 `npm install -g firebase-tools`
 
