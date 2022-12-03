@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   constructor (private http: HttpClient) {}
 
   ngOnInit() {
-    // Step 1 : "Hello, Heroku ! 👋"
+    // Step 1 : "Hello, samsara.live ! 👋"
     this.http.get("https://samsara.live/api-pokemon", this.httpOptions).subscribe((res) => console.log(res));
 
     // Step 2 : "Get JWT token 🔓"
