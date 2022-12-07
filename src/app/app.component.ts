@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Step 1 : "Hello, Api ! 👋"
-    this.http.get("https://samsara.live/api-pokemon").subscribe((res) => console.log(res));
+    this.http.get("https://samsara.live/api-pokemon", this.httpOptions).subscribe((res) => console.log(res));
 
     // Step 2 : "Get JWT token 🔓"
     this.http.post(
