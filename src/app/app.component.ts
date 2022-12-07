@@ -7,10 +7,12 @@ import { tap, switchMap } from "rxjs/operators";
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
+
+  // Test des requêtes avant intégration à l'appli de l'API
+
   httpOptions = {
     headers: new HttpHeaders({
       'Access-Control-Allow-Origin': 'https://samsara.live/api-pokemon',
-      'mon-entete-personnalise': 'maValeur',
       'Content-Type': 'application/json',
       'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
       'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
@@ -21,8 +23,8 @@ export class AppComponent implements OnInit {
   constructor (private http: HttpClient) {}
 
   ngOnInit() {
-    // Step 1 : "Hello, Heroku ! 👋"
-    this.http.get("https://samsara.live/api-pokemon", this.httpOptions).subscribe((res) => console.log(res));
+    // Step 1 : "Hello, Api ! 👋"
+    this.http.get("https://samsara.live/api-pokemon").subscribe((res) => console.log(res));
 
     // Step 2 : "Get JWT token 🔓"
     this.http.post(
@@ -45,7 +47,7 @@ export class AppComponent implements OnInit {
     };
 
     return this.http.get(
-      "samsara.live/api-pokemon/api/pokemons",
+      "https://samsara.live/api-pokemon/api/pokemons",
       httpOptionsWithJWT
     );
   }
