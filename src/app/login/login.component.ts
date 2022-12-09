@@ -31,9 +31,19 @@ export class LoginComponent {
       .subscribe((isLoggedIn: boolean) => {
         this.setMessage();
 
+        let userName = this.name;
+        let userPassword = this.password;
+        const userInfo = { userName, userPassword };
+
         if(isLoggedIn) {
           this.router.navigate([ 'pokemons' ]);
+          // test user session
+          sessionStorage.setItem('userDetails', JSON.stringify(userInfo));
+
         } else {
+          // test user session
+          const { userName, userPassword } = userInfo;
+          if(userName && userPassword) return;
           this.password = '';
           this.router.navigate([ 'login' ]);
         };
