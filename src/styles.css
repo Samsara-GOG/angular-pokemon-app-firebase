@@ -2,3 +2,7 @@
 .card-content if3 {
 	padding: 24px 0px;
 }
+
+.card .card-content {
+	padding: 17px !important;
+}
