@@ -5,29 +5,31 @@ Application Web Angular d'administration de données de pokémons. Présence d'u
 L'application est hébergée sur Firebase (hostings).
 
 Cette application Angular possède une interface de connexion avec une reconnaissance des identifiants d'un administrateur principal. En cas de connexion réussie, l'administrateur reconnu est redirigé vers un panneau d'administration affichant une liste de pokémons récupérée à partir d'un fichier de données (src/app/pokemon/mock-pokemonList.ts).
-
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/login.jpg" alt="Formulaire de connexion" height="200">
+</p>
 A partir de cette liste de pokémons, l'utilisateur peut :
 
 - exécuter une recherche par nom de pokémon, dans le champ de formulaire dédié, pour trouver des pokémons particuliers (contraintes de 3 caractères minimum),
-
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/pokemons.jpg" alt="Liste de pokémons" height="200">
-
+</p>
 - créer un pokémon en cliquant sur le bouton "+" dédié,
-
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/add.jpg" alt="Ajouter un pokémon" height="200">
-
+</p>
 
 - cliquer sur le pokémon pour accèder au détail de sa fiche. Dans cette page détaillée, il peut visualiser toutes les informations disponibles sur le pokémon, et il peut aussi l'éditer en respectant des contraintes de validation (html5/ts), ou encore le supprimer de la liste.  
-
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/pokemon_detail.jpg" alt="Detail d'un pokémon" height="200">
-
+</p>
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/edit.jpg" alt="Editer un pokémon" height="200">
-
+</p>
 Les formulaires de création et d'édition de pokémon possèdent tous deux des contraintes de validation bien définis, pour informer l'utilisateur des erreurs de validation et l'aider à les corriger.
-
+<p align="center">
 <img src="https://samsara.live/images/pokemon/angular/validation_error.jpg" alt="Erreurs de validation" height="200">
-
+</p>
 Projet en ligne à des fins de test sur ces deux urls :
 (il suffit de recharger la page du navigateur pour rétablir la liste originale après les modifications)  
 
