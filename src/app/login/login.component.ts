@@ -42,6 +42,8 @@ export class LoginComponent {
 
         } else {
           // test user session
+          console.log(sessionStorage.getItem("userDetails"));
+
           const { userName, userPassword } = userInfo;
           if(userName && userPassword) return;
           this.password = '';
