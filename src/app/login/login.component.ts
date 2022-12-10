@@ -39,11 +39,8 @@ export class LoginComponent {
           this.router.navigate([ 'pokemons' ]);
           // test user session
           sessionStorage.setItem('userDetails', JSON.stringify(userInfo));
-          console.log(sessionStorage.getItem("userDetails"));
         } else {
           // test user session
-          console.log(sessionStorage.getItem("userDetails"));
-
           const { userName, userPassword } = userInfo;
           if(userName && userPassword) return;
           this.password = '';
